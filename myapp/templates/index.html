@@ -1,0 +1,32 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding web app</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Adding two numbers</h1>
+    <form action="add">
+      <div class="group">
+        <input type="text" name="num1" required>
+        <label>Enter the 1st number</label>
+      </div>
+      <div class="group">
+        <input type="text" name="num2" required>
+        <label>Enter the 2nd number</label>
+      </div>
+      <button type="submit">Add the numbers</button>
+    </form>
+
+    <p class="center">This web app is developed using <a href="https://www.python.org/" target="_blank">Python</a> and <a href="https://www.djangoproject.com/" target="_blank">Django</a> technologies</p>
+
+    <footer class="footer" id="footer">
+      <p>by Valeriy Bercha</p>
+    </footer>
+</body>
+</html>
